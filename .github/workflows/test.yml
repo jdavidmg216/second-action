@@ -32,6 +32,6 @@ jobs:
         run: echo "Deploying..."
       - name: Get Context Variables Github
         run: |
-          echo "${{ toJSON(github) }}"
+          echo "${{ toJSON(github.event) }}"
           
 
