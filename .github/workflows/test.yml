@@ -17,6 +17,7 @@ on:
       - 'feat/**' #feat/new feat/new/button
     paths:
       - '**.js' #Trigger if the push refers to JS files
+# You can skip workflows by adding to the commit message [skip ci] [skip actions]
 jobs:
   test:
     runs-on: ubuntu-latest
