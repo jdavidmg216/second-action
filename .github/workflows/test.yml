@@ -1,5 +1,5 @@
 name: Second Workflow
-on: push
+on: [push, workflow_dispatch, pull_request] # Multiple Events Triggers
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,5 +30,8 @@ jobs:
         run: npm run build
       - name: Deploy
         run: echo "Deploying..."
+      - name: Get Context Variables Github
+        run: |
+          echo "${{ toJSON(github) }}"
           
 
