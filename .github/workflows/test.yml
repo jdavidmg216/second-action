@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
   push: 
     branches:
-      - main
+      - master
       - 'dev-*' #dev-new, dev-2
       - 'feat/**' #feat/new feat/new/button
     paths:
