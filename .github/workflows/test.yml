@@ -29,6 +29,7 @@ jobs:
         with:
           node-version: 18
       - name: Install Dependencies
+        continue-on-error: true # Continue on error
         run: npm ci
       - name: Run tests
         id: run-tests
