@@ -1,4 +1,4 @@
-name: Reusable
+name: Use Reuse
 on: workflow_dispatch
 jobs:
   reuse:
