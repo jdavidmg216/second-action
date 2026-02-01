@@ -1,0 +1,6 @@
+name: Reusable
+on: workflow_dispatch
+jobs:
+  reuse:
+    uses: ./.github/workflows/reusable.yml
+    
